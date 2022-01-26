@@ -1,0 +1,47 @@
+﻿<!
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Moment 1.2</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="css/tablet.css" media=" (max-width: 933px)">
+</head>
+<body>
+  
+    <header class="header">
+    <span class="logo" >Moment 1.2</span>
+    <div class="date" >
+        The current date is: @RazorModel.getDate()
+    </div>
+</header>
+<div class="wrapper">
+    <div class="sidebar">
+        <nav>
+
+    <a href = "/"> Home </a>
+    <a href = "/About"> About </a>
+    <a href = "/Razor"> Razor </a>
+   
+    
+</nav>
+    </div>
+    <div class="mainContent" >
+    <button class="fullscreenBtn" onclick="fullscreen()">fullscreen</button>
+ 
+             @RenderBody()
+   </div>
+  
+</div>
+ <footer class="footer">Created by Måns - Reach me by email: <a href="mans99@live.se">mans99@live.se</a> </footer>
+   <script src="~/js/site.js" asp-append-version="true"></script>
+
+   <Razor>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

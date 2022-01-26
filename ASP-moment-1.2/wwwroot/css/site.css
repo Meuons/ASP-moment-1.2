@@ -1,0 +1,70 @@
+﻿
+/*Place all content in the center*/
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    min-height: 73vh;
+}
+
+.logo {
+    font-size: 2.5em;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: red;
+}
+
+header {
+    padding: 20px;
+
+    margin-bottom: 20px;
+    border: 2px solid black;
+    background-color: white;
+}
+/*Put the date in the top right corner*/
+.date{
+    float: right;
+}
+/*Remove th dots from the list*/
+ul {
+    list-style-type: none;
+}
+
+.mainContent {
+    border: 2px solid black;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+}
+
+body {
+    min-height: 100vh;
+}
+
+footer {
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+/*Put sidebar to the far left*/
+.sidebar {
+    position: absolute;
+    left: 0;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+}
+
+    .sidebar a {
+        display: block;
+        font-size: 0.9em;
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+
+
+
